@@ -1,4 +1,6 @@
+require 'pry'
 def count_elements(array)
-  # code goes here
+  counts = Hash.new(0)
+  array.each { |name| counts[name] += 1 }
+  return counts
 end
- 
